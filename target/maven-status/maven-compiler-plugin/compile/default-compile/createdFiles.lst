@@ -1,0 +1,4 @@
+org/apiguard/entity/Api.class
+org/apiguard/valueobject/BaseRestResource.class
+org/apiguard/entity/Base.class
+org/apiguard/valueobject/ApiVo.class
