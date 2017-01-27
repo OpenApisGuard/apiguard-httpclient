@@ -1,6 +1,6 @@
 package org.apiguard.entity;
 
-public interface Api extends Base{
+public interface Api extends Base {
 
 	public String getReqUri();
 
