@@ -1,8 +1,5 @@
 package org.apiguard.valueobject;
 
-import java.util.Date;
-import java.util.UUID;
-
 public class MessageStringVo extends BaseRestResource {
 
 	private static final long serialVersionUID = 1L;
@@ -10,7 +7,7 @@ public class MessageStringVo extends BaseRestResource {
 	private String message;
 
 	public MessageStringVo(String message) {
-		super(UUID.randomUUID(), new Date());
+		super(null, null, null);
 		this.message = message;
 	}
 

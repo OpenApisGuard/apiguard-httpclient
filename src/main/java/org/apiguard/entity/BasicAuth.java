@@ -1,8 +1,8 @@
 package org.apiguard.entity;
 
-public interface Auth extends Base {
+public interface BasicAuth extends Base {
 	
-	public String getKey();
+	public String getPassword();
 
 	public String getReqUri();
 

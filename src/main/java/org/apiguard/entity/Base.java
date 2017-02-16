@@ -8,4 +8,6 @@ public interface Base {
 	public UUID getId();
 	
 	public Date getCreationDate();
+
+	public Date getLastUpdateDate();
 }

@@ -6,7 +6,7 @@ public interface Api extends Base {
 
 	public String getName();
 
-	public String getFwdUri();
+	public String getDownstreamUri();
 	
 	public boolean isAuthRequired();
 	

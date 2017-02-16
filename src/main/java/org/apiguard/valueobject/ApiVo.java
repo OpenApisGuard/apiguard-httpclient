@@ -10,7 +10,7 @@ public class ApiVo extends BaseRestResource {
 
 	private String name;
 
-	private String fwdUri;
+	private String downstreamUri;
 	
 	private boolean isAuthRequired;
 
@@ -26,11 +26,11 @@ public class ApiVo extends BaseRestResource {
 	
 	private boolean isLdapAuth;
 	
-	public ApiVo(UUID id, Date creationDate, String name, String reqUri, String fwdUri, boolean isAuthRequired, boolean isBasicAuth, boolean isKeyAuth, boolean isHmacAuth, boolean isOAuth2Auth, boolean isJwtAuth, boolean isLdapAuth) {
-		super(id, creationDate);
+	public ApiVo(UUID id, String creationDate, String lastUpdateDate, String name, String reqUri, String downstreamUri, boolean isAuthRequired, boolean isBasicAuth, boolean isKeyAuth, boolean isHmacAuth, boolean isOAuth2Auth, boolean isJwtAuth, boolean isLdapAuth) {
+		super(id, creationDate, lastUpdateDate);
 		this.reqUri = reqUri;
 		this.name = name;
-		this.fwdUri = fwdUri;
+		this.downstreamUri = downstreamUri;
 		this.isAuthRequired = isAuthRequired;
 		this.isBasicAuth = isBasicAuth;
 		this.isHmacAuth = isHmacAuth;
@@ -48,12 +48,8 @@ public class ApiVo extends BaseRestResource {
 		return name;
 	}
 
-	public String getFwdUri() {
-		return fwdUri;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public String getDownstreamUri() {
+		return downstreamUri;
 	}
 
 	public boolean isAuthRequired() {
